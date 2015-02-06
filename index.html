@@ -9,6 +9,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -19,32 +20,22 @@
         <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.4.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+      <div class="main-container">
+          <div class="main wrapper clearfix">
+            <h1 class="main-hd"><span id="days-since-display"></span> days since Cody last spilled.</h1>
 
-        <!-- <div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title">Days Since</h1>
-            </header>
-        </div> -->
+            <div class="save-date">
+              <button id="update-date" class="btn btn-spilled">He Spilled!</button>
+            </div>
 
-        <div class="main-container">
-            <div class="main wrapper clearfix">
-              <h1 class="main-hd"><span id="days-since-display"></span> days since cody last spilled.</h1>
+            <div style="display:none" class="error">
+              Looks like there was a problem saving the date.""
+            </div>
 
-              <div class="save-date">
-                <button id="update-date" class="btn btn-spilled">He Spilled!</button>
-              </div>
-
-              <div style="display:none" class="error">
-                Looks like there was a problem saving the date.""
-              </div>
-
-              <div style="display:none" class="success">
-                Last Spill Date saved!
-              </div>
-            </div> <!-- #main -->
+            <div style="display:none" class="success">
+              Last Spill Date saved!
+            </div>
+          </div> <!-- #main -->
         </div> <!-- #main-container -->
 
         <div class="footer-container">
